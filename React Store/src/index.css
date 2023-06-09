@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.wrapper {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* Search */
+.search-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 100vw;
+}
+
+.search-box #search{
+    width: 60%;
+    height: 30px;
+    margin: 10px;
+    border-color: #cecece;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+/* Product Table */
+
+.product-table {
+    width: 60%;
+    border-spacing: 0;
+}
+
+.product-table thead {
+    background-color: #e7ecef;
+    height: 50px;
+    color: #4c5057;
+}
+
+.product-table tbody tr{
+    text-align: center;
+
+}
+.product-table tbody tr:hover{
+    cursor: pointer;
+    background-color: #cecece50;
+}
+
+.product-table tbody tr td{
+    padding: 10px;
+    
+}
+
+/* Modal */
+
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1000;
+}
+
+.modal {
+    width: 200px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 25px 50px;
+    z-index: 1001;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.modal .close-button{
+    border: 0;
+    padding: 10px;
+    background-color: #e7ecef;
+    color: #4c5057;
+    font-weight: bold;
+}
+
+.modal .close-button:hover{
+    cursor: pointer;
+}
+
+

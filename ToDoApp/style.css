@@ -1,0 +1,209 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+
+  .app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header styles */
+  h1 {
+    margin-top: 20px;
+  }
+  
+  /* Form styles */
+  .todo-form {
+    margin: 10px 0;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .todo-form form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+  }
+  
+  .todo-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .todo-form #description,
+  .todo-form #deadline,
+  .todo-form #priority {
+    width: 94%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+  }
+
+  .task-info #description,
+  .task-info #deadline,
+  .task-info #priority {
+    width: 94%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+  }
+
+  
+  .todo-form #add-task {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 130px;
+    align-self: center;
+  }
+  
+  /* Sort/filter styles */
+  .sort-filter {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .sort,
+  .filter {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+  }
+  
+  .sort select,
+  .filter select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  /* Tasks styles */
+  .tasks {
+    margin: 10px 0;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .task {
+    margin: 10px 0;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-info {
+    margin-bottom: 10px;
+  }
+  
+  .task-title {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .task-deadline,
+  .task-priority {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+
+  .complete {
+    opacity: 70%;
+  }
+
+  .Low{
+    box-shadow: -5px 0 green;
+  }
+  
+  .Medium{
+    box-shadow: -5px 0 yellow;
+  }
+
+  .High{
+    box-shadow: -5px 0 red;
+  }
+
+
+  /* Media queries */
+
+  /* Extra small devices (phones, 640px and down) */
+@media only screen and (max-width: 640px) {
+  .todo-form {
+    max-width: 100%;
+  }
+
+  .todo-form .form{
+    width: 100%;
+  }
+
+  .sort-filter{
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .tasks .task{
+    width: 100%;
+  }
+
+  .tasks .task .task-info .task-title {
+    inline-size: 200px;
+    overflow-wrap: break-word;
+  }
+
+  .task-info form{
+    max-width: 310px;
+  }
+
+}
+
+  
+
+  

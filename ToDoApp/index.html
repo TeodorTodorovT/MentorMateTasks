@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>ToDo App</title>
+</head>
+
+<body>
+    
+    <div class="app">
+        <h1>To-Do App</h1>
+    <div class="todo-form">
+        <form class="form">
+            <label for="description">Task Description:</label>
+            <input type="text" id="description" required maxlength="40"/>
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline" required />
+            <label for="priority">Priority:</label>
+            <select required id="priority">
+                <option value="1">High</option>
+                <option value="2">Medium</option>
+                <option value="3" selected>Low</option>
+            </select>
+            <button type="submit" class="add-task" id="add-task">Add Task</button>
+        </form>
+    </div>
+    <div class="sort-filter">
+        <div class="sort">
+            <h2>Sorting Options</h2>
+            <select id="sort">
+                <option value="none">None</option>
+                <option value="alphabetically">Alphabetically</option>
+                <option value="deadlineClose">By deadline (closest)</option>
+                <option value="deadlineFurter">By deadline (furthest)</option>
+                <option value="priorityHigh">By priority (highest)</option>
+                <option value="priorityLow">By priority (lowest)</option>
+            </select>
+        </div>
+        <div class="filter">
+            <h2>Filter Options</h2>
+            <select id="filter">
+                <option value="none">None</option>
+                <option value="completed">Completed</option>
+                <option value="notCompleted">Not completed</option>
+                <option value="highPriority">High Priority</option>
+                <option value="mediumPriority">Medium Priority</option>
+                <option value="lowPriority">Low Priority</option>
+            </select>
+        </div>
+
+    </div>
+    <div class="tasks">
+        <!-- <div class="task">
+            <div class="task-info">
+                <h3 class="task-title">Task Title</h3>
+                <p class="task-deadline">Deadline Date</p>
+                <p class="task-priority">Priority Label</p>
+            </div>
+            <div class="task-actions">
+                <button class="btn edit-task-btn">Edit</button>
+                <button class="btn delete-task-btn">Delete</button>
+                <button class="btn complete-task-btn">Complete</button>
+            </div>
+        </div> -->
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
